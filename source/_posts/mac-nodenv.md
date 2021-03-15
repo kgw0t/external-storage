@@ -21,9 +21,7 @@ Node.jsが必要になったので、Macにインストールする。
   -  Nodenvをインストールするために利用
 
 ## [Nodenv](https://github.com/nodenv/nodenv)
-
-### インストール
-まずは、Homebrewを利用してNodenvをインストールする。
+Homebrewを利用してNodenvをインストールする。
 
 ```zsh
 $ brew install nodenv
@@ -55,9 +53,7 @@ eval "$(nodenv init -)"
 
 ## Node.js
 インストールしたNodenvを利用して、Node.jsをインストールする。
-
-### インストール
-インストール前にどのバージョンをインストールできるかを確認する。
+まずはどのバージョンをインストールできるかを確認する。
 
 ```zsh
 $ nodenv install -l
