@@ -13,21 +13,21 @@ date: 2021-03-11 22:46:14
 Node.jsが必要になったので、Macにインストールする。
 せっかくなので、Nodenvを利用してNode.jsのバージョン管理をできるようにする。
 
-## 実施時の環境
+# 実施時の環境
 - Mac
   -  Big Sur 11.2.3
 - [Homebrew](https://brew.sh/index_ja)
   -  macOS用のパッケージマネージャ
   -  Nodenvをインストールするために利用
 
-## [Nodenv](https://github.com/nodenv/nodenv)
+# [Nodenv](https://github.com/nodenv/nodenv)
 Homebrewを利用してNodenvをインストールする。
 
 ```zsh
 $ brew install nodenv
 ```
 
-### 初期設定
+## 初期設定
 インストール完了後は `~/.zshrc` に `eval "$(nodenv init -)"` を記述する。
 
 ```zsh
@@ -51,7 +51,7 @@ $ nodenv init
 eval "$(nodenv init -)"
 ```
 
-## Node.js
+# Node.js
 インストールしたNodenvを利用して、Node.jsをインストールする。
 まずはどのバージョンをインストールできるかを確認する。
 
@@ -80,7 +80,7 @@ $ nodenv install 15.11.0
 $ nodenv global 15.11.0
 ```
 
-### 個別のプロジェクトへの適用
+## 個別のプロジェクトへの適用
 とりあえず何も設定していない場所でも使えるようにグローバルに設定をしたが、グローバルのバージョンが変わった時にそれぞれのプロジェクトで別バージョンを見に行かないようにプロジェクトごとに設定しておく。
 
 ```zsh
@@ -88,7 +88,7 @@ $ cd {プロジェクトへのパス}
 $ nodenv local 15.11.0
 ```
 
-### インストールされているかの確認
+## インストールされているかの確認
 指定したNode.jsのバージョンがインストールされているかを確認する。
 
 ```zsh
