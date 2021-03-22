@@ -5,7 +5,7 @@ tags:
   - hexo
 categories:
   - tech
-date: 2021-03-21 02:51:03
+date: 2021-03-22 20:15:22
 ---
 
 
@@ -166,6 +166,26 @@ theme: light
 なおこのテーマを使った場合、ヘッダー部の`Home`リンクが`localhost:4000/null`となってしまう。
 テーマ変える前では発生しないため、テーマ側の問題かと思う。
 修正のプルリクエスト出してみるか、とりあえずForkして自分用にだけでも直したいと思う。
+
+### 追記(2021/03/22)
+ヘッダー部の`Home`リンクが`localhost:4000/null`となってしまう件に関して、テーマの設定ファイルが下記のようになっていることが原因だった。
+
+```yml
+# _config.yml
+menu:
+  Home:
+  Archives: archives
+```
+
+設定ファイルの`menu`からヘッダーのリンクを生成しているが、`Home`の部分に何も設定されていないため、`null`になるようだ。
+プルリクエストを出す作法とかを知らないので、とりあえずForkした自分用の設定ファイルは下記のようにトレイリングスラッシュを入れることで解決済み（[修正コミット](https://github.com/kgw0t/hexo-theme-light/commit/0d911d95244901a70f8073fac750016407d2e00f)）。
+
+```yml
+# _config.yml
+menu:
+  Home: /
+  Archives: archives/
+```
 
 # 記事を書いてみる
 [記事を書く公式ドキュメント](https://hexo.io/docs/writing)を見ながら記事を書いてみる。
