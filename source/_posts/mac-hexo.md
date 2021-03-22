@@ -283,6 +283,41 @@ $ ls source/_posts/image-test
 もちろんこのURLが把握できていれば、`asset_img`を利用せずにMarkdown形式で画像を表示することもできる。
 `asset_img`を利用するメリットは、`permalink`の設定を変更した場合に全ての画像へアクセスするURLが変更されてしまい、画像URLを変更する必要が出てきてしまうため、Markdown形式へのこだわりが無ければこっちを使うと良い。
 
+# 静的なファイルを生成する
+記述した内容を元にHTMLファイル等の静的ファイルを生成する。
+
+```zsh
+$ hexo generate
+or
+$ hexo g
+INFO  Validating config
+INFO  Start processing
+INFO  Files loaded in 151 ms
+INFO  Generated: archives/index.html
+INFO  Generated: archives/2021/index.html
+INFO  Generated: archives/2021/03/index.html
+INFO  Generated: index.html
+INFO  Generated: js/script.js
+INFO  Generated: fancybox/jquery.fancybox.min.css
+INFO  Generated: 2021/03/22/hello-world/index.html
+INFO  Generated: css/style.css
+INFO  Generated: fancybox/jquery.fancybox.min.js
+INFO  Generated: css/fonts/fontawesome-webfont.woff2
+INFO  Generated: js/jquery-3.4.1.min.js
+INFO  Generated: css/fonts/fontawesome-webfont.woff
+INFO  Generated: css/fonts/FontAwesome.otf
+INFO  Generated: css/fonts/fontawesome-webfont.ttf
+INFO  Generated: css/fonts/fontawesome-webfont.eot
+INFO  Generated: css/images/banner.jpg
+INFO  Generated: css/fonts/fontawesome-webfont.svg
+INFO  17 files generated in 439 ms
+
+$ ls public
+2021       archives   css        fancybox   index.html js
+```
+
+構築したブログをホスティングする場合は`public`配下を指定し、生成した静的ファイルを参照するように設定する。
+
 # 最後に
 とりあえず現状やったことベースで記述した。
 公式ドキュメントを見るとまだまだ触ったことのない設定等があるので、後々その辺りもまとめられるといい。
