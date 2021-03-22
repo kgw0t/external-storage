@@ -90,8 +90,8 @@ $ open http://localhost:4000
 ```
 
 こんな感じの画面が出てきたら問題なし。
-
-{% asset_img 1.png %}
+<br>
+{% asset_img 1.png 500 %}
 
 # Hexoの設定を変更する
 [設定周りの公式ドキュメント](https://hexo.io/docs/configuration)を見ながら少し設定をいじって見る。
@@ -111,8 +111,8 @@ timezone: 'Asia/Tokyo'
 タイトル部分が変更され、右サイドカラムの部分が日本語になっていることが確認できる。
 画像には載っていないが、フッター部に記述されている筆者の名前が変わっている。
 タイムゾーンに関しては確認できなかったが、ファイルを作成した日付等に影響するのだろう。
-
-{% asset_img 2.png%}
+<br>
+{% asset_img 2.png 500 %}
 
 ## URLの設定をしてみる
 URLを自分なりにカスタムできるよう。
@@ -160,8 +160,8 @@ theme: light
 
 設定後はこんな感じになる。
 自分でテーマを作成することもできるので、そこもできたらなと思うが、今はとりあえずここまで。
-
-{% asset_img 3.png %}
+<br>
+{% asset_img 3.png 500 %}
 
 なおこのテーマを使った場合、ヘッダー部の`Home`リンクが`localhost:4000/null`となってしまう。
 テーマ変える前では発生しないため、テーマ側の問題かと思う。
@@ -197,8 +197,8 @@ INFO  Created: ~/blog/source/_drafts/draft-test.md
 ```zsh
 $ hexo new photo photo-test
 ```
-
-{% asset_img 4.png %}
+<br>
+{% asset_img 4.png 500 %}
 
 `draft`で作成した非公開記事は普通にHexoを立ち上げても表示されないが、オプションを指定することで表示される。
 
@@ -268,16 +268,16 @@ $ ls source/_posts/image-test
 ```md
 {% asset_img 1.png %}
 ```
-
-{% asset_img 5.png %}
+<br>
+{% asset_img 5.png 500 %}
 
 また、`asset_link`にすることで、画像ファイルへのリンクにすることもできる。
 
 ```md
 {% asset_link 1.png %}
 ```
-
-{% asset_img 6.png %}
+<br>
+{% asset_img 6.png 500 %}
 
 画像は`{記事へのURL}/{画像ファイル}`というURLでアクセスすることができる。
 もちろんこのURLが把握できていれば、`asset_img`を利用せずにMarkdown形式で画像を表示することもできる。
