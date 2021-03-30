@@ -14,10 +14,10 @@ MySQLは使ったことあったけど、MariaDBってどんな感じなのか�
 
 # 実施時の環境
 - Mac
-  -  Big Sur 11.2.3
+  - Big Sur 11.2.3
 - [Homebrew](https://brew.sh/index_ja)
-  -  macOS用のパッケージマネージャ
-  -  MariaDBをインストールするために利用
+  - macOS用のパッケージマネージャ
+  - MariaDBをインストールするために利用
 
 # [MariaDB](https://mariadb.org/)
 Homebrewを利用してMariaDBをインストールする。
