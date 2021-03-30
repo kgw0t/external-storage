@@ -1,8 +1,8 @@
 ---
 title: Hexoでブログを構築する
 tags:
-  - mac
-  - hexo
+  - Mac
+  - Hexo
 categories:
   - tech
 date: 2021-03-22 20:15:22

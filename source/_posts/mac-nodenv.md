@@ -1,9 +1,9 @@
 ---
 title: nodenvを利用してMacにNode.jsを入れる&バージョン管理
 tags:
-  - mac
+  - Mac
   - nodenv
-  - nodejs
+  - Node.js
 categories:
   - tech
 date: 2021-03-11 22:46:14

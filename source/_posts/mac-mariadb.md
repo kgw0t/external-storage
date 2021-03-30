@@ -1,8 +1,8 @@
 ---
 title: Mac上でMariaDBを動かす
 tags:
-  - mac
-  - mariadb
+  - Mac
+  - MariaDB
 categories:
   - tech
 comments: false
