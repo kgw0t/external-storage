@@ -1,5 +1,5 @@
 ---
-title: Nodenvを利用してMacにNode.jsを入れる&バージョン管理
+title: nodenvを利用してMacにNode.jsを入れる&バージョン管理
 tags:
   - mac
   - nodenv
@@ -12,17 +12,17 @@ comments: false
 
 
 Node.jsが必要になったので、Macにインストールする。
-せっかくなので、Nodenvを利用してNode.jsのバージョン管理をできるようにする。
+せっかくなので、nodenvを利用してNode.jsのバージョン管理をできるようにする。
 
 # 実施時の環境
 - Mac
-  -  Big Sur 11.2.3
+  - Big Sur 11.2.3
 - [Homebrew](https://brew.sh/index_ja)
-  -  macOS用のパッケージマネージャ
-  -  Nodenvをインストールするために利用
+  - macOS用のパッケージマネージャ
+  - nodenvをインストールするために利用
 
-# [Nodenv](https://github.com/nodenv/nodenv)
-Homebrewを利用してNodenvをインストールする。
+# [nodenv](https://github.com/nodenv/nodenv)
+Homebrewを利用してnodenvをインストールする。
 
 ```zsh
 $ brew install nodenv
@@ -53,7 +53,7 @@ eval "$(nodenv init -)"
 ```
 
 # Node.js
-インストールしたNodenvを利用して、Node.jsをインストールする。
+インストールしたnodenvを利用して、Node.jsをインストールする。
 まずはどのバージョンをインストールできるかを確認する。
 
 ```zsh
@@ -98,7 +98,7 @@ v15.11.0
 ```
 
 これでOK。
-あとはNodenvでインストールしたNode.jsのバージョン一覧を確認してみる。
+あとはnodenvでインストールしたNode.jsのバージョン一覧を確認してみる。
 
 ```zsh
 $ nodenv versions
