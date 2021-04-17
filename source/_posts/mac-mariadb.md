@@ -141,7 +141,7 @@ Thanks for using MariaDB!
 ## MariaDBに接続する
 
 ```zsh
-$ sudo mysql -u root -p
+$ mysql -u root -p
 ```
 
 初期設定の際に決めたrootユーザーのパスワードを入力すれば接続できる。
